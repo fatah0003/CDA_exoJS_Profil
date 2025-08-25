@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <section id="profil-form">
+        <h1>Créer ton profil</h1>
+
+    <form method="post">
+        <div id="description"></div>
+        <div id="description-change">changer de description</div>
+        <label for="pseudo">Pseudo</label>
+        <input id="pseudo" name="pseudo" type="text">
+        <div>Choisis ton avatar :</div>
+
+            <div>
+                <label>
+            <input type="radio" name="avatar" value="one">
+            <img src="./img/10491830.jpg" alt="Avatar 1" width="80">
+            </label>
+
+            <label>
+            <input type="radio" name="avatar" value="two">
+            <img src="./img/7309681.jpg" alt="Avatar 2" width="80">
+            </label>
+
+            <label>
+            <input type="radio" name="avatar" value="three">
+            <img src="./img/9334237.jpg" alt="Avatar 3" width="80">
+            </label>
+            </div>
+
+        <button type="submit" id="btn" disabled>Suivant</button>
+
+    </form>
+    </section>
+
+    <section id="profil" style="display: none;">
+
+        <img id="img-profil" src="" alt="">
+        <div id="pseudo-profil"></div>
+        <p id="description-profil"></p>
+    </section>
+
+</body>
+</html>
