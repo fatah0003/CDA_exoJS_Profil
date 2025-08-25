@@ -41,7 +41,16 @@ btn.addEventListener("click", (e)=>{
     pseudo_profil.textContent = pseudo.value;
     description_profil.textContent = description.textContent;
     
-    
+    let avatars = {
+    one: "./img/10491830.jpg",
+    two: "./img/7309681.jpg",
+    three: "./img/9334237.jpg"
+};
+
+let selectedAvatar = document.querySelector('input[name="avatar"]:checked').value;
+img_profil.src = avatars[selectedAvatar];
+img_profil.style.height = "60px";
+img_profil.style.width = "60px";
 
     profil_form.style.display = "none";
     profil.style.display = "block";
